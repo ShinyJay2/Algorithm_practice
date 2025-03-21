@@ -8,7 +8,7 @@ def get_maximum(n):
     tmp = []
 
     if n == 1:
-        return n
+        return arr[0]
 
     for i in range(n):
         tmp.append(arr[i])
