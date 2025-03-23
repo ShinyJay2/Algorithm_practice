@@ -16,17 +16,15 @@ for amount, direction in zip(x, dir):
     old_pos = pos
 
     if direction == "L":
-        new_pos = old_pos - amount
-        step = -1
+        pos = old_pos - amount
+        for i in range(pos, old_pos):
+            visited[i] += 1
 
     if direction == "R":
-        new_pos = old_pos + amount
-        step = 1
+        pos = old_pos + amount
+        for i in range(old_pos, pos):
+            visited[i] += 1
 
-    for i in range(old_pos + step, new_pos + step, step):
-        visited[i] += 1
-    
-    pos = new_pos
 
 
 cnt = 0
