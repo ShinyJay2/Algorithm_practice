@@ -23,7 +23,7 @@ for amount, direction in zip(x, dir):
         new_pos = old_pos + amount
         step = 1
 
-    for i in range(old_pos, new_pos, step):
+    for i in range(old_pos + step, new_pos + step, step):
         visited[i] += 1
     
     pos = new_pos
