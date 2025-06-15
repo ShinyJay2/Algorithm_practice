@@ -4,7 +4,7 @@ nums = list(map(int, input().split()))
 # What about making a dictionary of the k pawns
 pawns = dict()
 for i in range(k):
-    pawns[i] = 0
+    pawns[i] = 1
 
 
 best = 0
